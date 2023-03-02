@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Treat Template
-url: "https://spring-bat.cloudvent.net/"
+title: Recipe Template
+url: ""
 baseurl:
 google_analytics_key:
 newsletter_action:
@@ -16,9 +16,9 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Treat Template
+  name: Recipe Template
   links:
-    - https://github.com/CloudCannon/treat-jekyll-template
+    - https://github.com/Xipit/recipe-jekyll-template
 
 # -----
 # Build
@@ -69,9 +69,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
-
-# -----------
-# CloudCannon
 
 social_icons:
   - Facebook

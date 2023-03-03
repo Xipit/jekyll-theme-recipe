@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
     s.name          = "jekyll-theme-recipe"
-    s.version       = "0.1.1"
+    s.version       = "0.1.2"
     s.license       = "CC0-1.0"
     s.authors       = ["Hanno Witzleb"]
     s.email         = []
@@ -21,8 +21,6 @@ Gem::Specification.new do |s|
     s.add_runtime_dependency "jekyll-feed", "0.17.0"
     s.add_runtime_dependency "jekyll-paginate", "1.1.0"
     s.add_runtime_dependency "jekyll-sitemap", "1.4.0"
-    s.add_runtime_dependency "tzinfo", "~> 2.0", ">= 2.0.6"
-    s.add_runtime_dependency "tzinfo-data", "~> 1.2022", ">= 1.2022.7"
     s.add_development_dependency "html-proofer", "~> 3.0"
     s.add_development_dependency "rubocop-github", "~> 0.16"
     s.add_development_dependency "w3c_validators", "~> 1.3"

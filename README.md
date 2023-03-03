@@ -2,7 +2,7 @@
 
 Food/baking blog theme for Jekyll.
 
-![Recipe theme screenshot](images/_screenshot.png)
+![Recipe theme screenshot](assets/images/_screenshot.png)
 
 ## Features
 

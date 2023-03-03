@@ -27,6 +27,11 @@ Food/baking blog theme for Jekyll.
 
 Recipe was built with [Jekyll](http://jekyllrb.com/) version 3.5, but should support newer versions as well.
 
+Add to your Gemfile: 
+~~~
+ gem "jekyll-theme-recipe",
+~~~
+
 Install the dependencies with [Bundler](http://bundler.io/):
 
 ~~~bash

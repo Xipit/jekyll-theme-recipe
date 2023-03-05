@@ -47,7 +47,7 @@
 				list-style-type: none;
 				&:before {
 					content: '\00bb';
-					color: #{$ingredients_color};
+					color: #{$recipe_color};
 					padding-right: 0.5em;
 				}
 			}
@@ -64,7 +64,7 @@
 				&:before {
 					content: counter(step-counter);
 					margin-right: 0px;
-					background-color: #{$directions_color};
+					background-color: #{$recipe_color};
 					color: white;
 					/* padding: 1px 7px; */
 					font-size: .7em;

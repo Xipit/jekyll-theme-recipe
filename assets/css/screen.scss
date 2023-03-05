@@ -1,9 +1,9 @@
 ---
+title: CSS-Stylesheet for screens
 ---
 
-
-$ingredients_color: "{{ site.data.post.ingredients_color }}";
-$directions_color: "{{ site.data.post.directions_color }}";
+// doesnt work :(, page.color seems to be nil, but actually exists
+$recipe_color: "{% if page.color And page.color != '' %}{{ page.color }}{% else %}{{'#ff4e4e'}}{% endif %}";
 
 @import "variables";
 @import "elements";

@@ -4,3 +4,8 @@ facebook: CloudCannon
 twitter: CloudCannon
 pinterest: pinterest
 instagram: baking
+
+newsletter_label: "Newsletter"
+newsletter_description_markdown: "Get my latest recipes sent straight to your inbox."
+newsletter_email_placeholder: "Email address"
+newsletter_email_action: "Sign up"

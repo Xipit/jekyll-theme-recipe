@@ -1,0 +1,11 @@
+jump_recipe_button: "Jump to recipe"
+
+ingredients_title: Ingredients
+directions_title: Directions
+
+more_recipes_title: "More delicious recipes"
+more_recipes_markdown: "This is one of the many fantastic recipes available on this blog"
+more_recipes_button: "Check out more recipes"
+
+directions_color: \#ff4e4e
+ingredients_color: \#ff4e4e

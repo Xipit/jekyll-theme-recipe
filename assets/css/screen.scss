@@ -1,5 +1,10 @@
 ---
 ---
+
+
+$ingredients_color: "{{ site.data.post.ingredients_color }}";
+$directions_color: "{{ site.data.post.directions_color }}";
+
 @import "variables";
 @import "elements";
 @import "layout";

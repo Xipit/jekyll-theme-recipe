@@ -17,10 +17,10 @@
 	</div>
 
 	{% if site.newsletter_action && site.newsletter_action!=""%}<form action="{{ site.newsletter_action }}" method="post">
-		<h3>Newsletter</h3>
-		<p>Get my latest recipes sent straight to your inbox.</p>
-		<input type="text" name="EMAIL" placeholder="Email address">
-		<input type="submit" value="Sign up">
+		<h3>{{ site.data.sidebar.newsletter_label }}</h3>
+		<p>{{ site.data.sidebar.newsletter_description_markdown | markdownify }}</p>
+		<input type="text" name="EMAIL" placeholder="{{ site.data.sidebar.newsletter_email_placeholder }}">
+		<input type="submit" value="{{ site.data.sidebar.newsletter_email_action }}">
 	</form>
 	{% endif %}
 </aside>

@@ -11,7 +11,9 @@ title: Home
 
 			{{ post.excerpt }}
 
-			<p><a class="button" href="{{ site.baseurl }}{{ post.url }}">Read more</a></p>
+			<p><a class="button" href="{{ site.baseurl }}{{ post.url }}">
+				{{ site.data.i18n.index.read_more_label }}
+			</a></p>
 		</article>
 	{% endfor %}
 

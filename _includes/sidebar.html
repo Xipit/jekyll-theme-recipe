@@ -5,7 +5,7 @@
 				<img src="{{ site.baseurl }}{{ site.data.sidebar.author_image }}" alt="author" class="author">
 			</a>
 		</p>
-		<p>{{ site.data.sidebar.description_markdown | markdownify }}</p>
+		<p>{{ site.data.i18n.sidebar.description_markdown | markdownify }}</p>
 	</div>
 
 	<div class="social-icons">
@@ -17,10 +17,10 @@
 	</div>
 
 	{% if site.newsletter_action && site.newsletter_action!=""%}<form action="{{ site.newsletter_action }}" method="post">
-		<h3>{{ site.data.sidebar.newsletter_label }}</h3>
-		<p>{{ site.data.sidebar.newsletter_description_markdown | markdownify }}</p>
-		<input type="text" name="EMAIL" placeholder="{{ site.data.sidebar.newsletter_email_placeholder }}">
-		<input type="submit" value="{{ site.data.sidebar.newsletter_email_action }}">
+		<h3>{{ site.data.i18n.sidebar.newsletter_label }}</h3>
+		<p>{{ site.data.i18n.sidebar.newsletter_description_markdown | markdownify }}</p>
+		<input type="text" name="EMAIL" placeholder="{{ site.data.i18n.sidebar.newsletter_email_placeholder }}">
+		<input type="submit" value="{{ site.data.i18n.sidebar.newsletter_email_action }}">
 	</form>
 	{% endif %}
 </aside>

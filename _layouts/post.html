@@ -19,12 +19,12 @@ layout: default
 
 	<div class="recipe-contents">
 		<div class="ingredients">
-			<h2>{{ site.data.post.ingredients_title }}</h2>
+			<h2>{{ site.data.i18n.post.ingredients_title }}</h2>
 			{{ page.recipe.ingredients_markdown | markdownify }}
 		</div>
 
 		<div class="directions">
-			<h2>{{ site.data.post.directions_title }}</h2>
+			<h2>{{ site.data.i18n.post.directions_title }}</h2>
 			{{ page.recipe.directions_markdown | markdownify }}
 		</div>
 	</div>
@@ -39,9 +39,9 @@ layout: default
 	</div>
 
 	<div class="cta">
-		<h2>{{ site.data.post.more_recipes_title }}</h2>
-		<p>{{ site.data.post.more_recipes_markdown | markdownify }}</p>
-		<div class="button"><a href="{{ site.baseurl }}/recipes">{{ site.data.post.more_recipes_button }}</a></div>
+		<h2>{{ site.data.i18n.post.more_recipes_title }}</h2>
+		<p>{{ site.data.i18n.post.more_recipes_markdown | markdownify }}</p>
+		<div class="button"><a href="{{ site.baseurl }}/recipes">{{ site.data.i18n.post.more_recipes_button }}</a></div>
 	</div>
 	{% if site.disqus_shortname and page.comments %}
 		<div id="disqus_thread"></div>

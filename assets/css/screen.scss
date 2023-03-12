@@ -3,7 +3,7 @@ title: CSS-Stylesheet for screens
 ---
 
 // doesnt work :(, page.color seems to be nil, but actually exists
-$recipe_color: "{% if page.color And page.color != '' %}{{ page.color }}{% else %}{{'#ff4e4e'}}{% endif %}";
+$recipe_color: "{% if page.color and page.color != '' %}{{ page.color }}{% else %}{{'#ff4e4e'}}{% endif %}";
 
 @import "variables";
 @import "elements";

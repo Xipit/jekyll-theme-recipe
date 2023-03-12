@@ -41,6 +41,25 @@
 			display: flex;
 		}
 
+		// ingredients
+		tr {
+			vertical-align: top;
+			& td:first-of-type{
+				&:before {
+					content: '\00bb';
+					color: #{$recipe_color};
+					padding-right: 0.5em;
+				}
+			}
+
+			// alternative measurements
+			em {
+				color: rgba(0, 0, 0, 0.45);
+				white-space: pre; // newline
+				font-style: normal;
+			}
+		}
+
 		ul {
 			padding: 0;
 			li {

@@ -21,6 +21,10 @@ layout: default
 		<div class="ingredients">
 			<h2>{{ site.data.i18n.post.ingredients_title }}</h2>
 			{{ page.recipe.ingredients_markdown | markdownify }}
+			{% if page.recipe.utensils_markdown %}
+				<h2>{{ site.data.i18n.post.utensils_title }}</h2>
+				{{ page.recipe.utensils_markdown | markdownify }}
+			{% endif %}
 		</div>
 
 		<div class="directions">

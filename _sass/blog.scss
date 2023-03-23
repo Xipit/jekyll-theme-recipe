@@ -34,6 +34,29 @@
 				display: inline-block;
 			}
 		}
+
+		input[type="number"] {
+			max-width: 50px;
+
+			background-color: black;
+			color: white;
+			border: none;
+			padding: 4px;
+
+			box-sizing: border-box;
+
+			&:hover, &:active, &:focus {
+				background-color: initial;
+				color: initial;
+
+				border: 1px solid black;
+			}
+		}
+
+		label {
+			display: initial;
+			cursor: pointer;
+		}
 	}
 
 	.recipe-contents {

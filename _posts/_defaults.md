@@ -6,6 +6,7 @@ featured_image:
 #color:
 recipe:
   servings:
+  servings_name:
   prep:
   cook:
   ingredients_markdown:

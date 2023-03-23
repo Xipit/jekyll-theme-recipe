@@ -12,7 +12,10 @@ layout: default
 	</div>
 
 	<ul id="recipe" class="recipe-overview">
-		<li title="Servings">{% include recipe-icon.html icon="quantity" %}<span>{{ page.recipe.servings }}</span></li>
+		<li title="Servings">{% include recipe-icon.html icon="quantity" %}<span>
+			<input id="servings_number" type="number" min="1" value="{{ page.recipe.servings }}"> 
+			<label for="servings_number">{{ page.recipe.servings_name }}</label>
+		</span></li>
 		<li title="Prep Time">{% include recipe-icon.html icon="time" %}<span>{{ page.recipe.prep }}</span></li>
 		<li title="Cook Time">{% include recipe-icon.html icon="cook" %}<span>{{ page.recipe.cook }}</span></li>
 	</ul>
@@ -66,8 +69,7 @@ layout: default
 	{% endif %}
 </article>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.imgPin.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/servings.js"></script>
 <script>
 	$(function() {
 		$('.post img').imgPin();

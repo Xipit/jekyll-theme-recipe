@@ -5,7 +5,8 @@ categories:
   - Cakes
 featured_image: https://source.unsplash.com/NAN22eh754c/1560x940
 recipe:
-  servings: 12 slices
+  servings: 12
+  servings_name: slices
   prep: 15 minutes
   cook: 65 minutes
   ingredients_markdown: |-

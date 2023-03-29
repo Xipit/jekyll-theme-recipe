@@ -3,24 +3,25 @@ nav {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	background: rgba(255, 255, 255, .9);
+	background: rgba(255, 255, 255, .75);
 	z-index: 999;
 
 	a {
 		display: inline-block;
 		text-decoration: none;
-		padding: 20px 15px;
-		color: #444;
+		padding: 14px 8px;
+		color: black;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		font-size: .9em;
 
 		&.active {
-			color: #888;
+			font-weight: bold;
 		}
 
-		&:hover {
-			color: #000;
+		&:hover,&:focus {
+			background-color: #000;
+			color: white;
 		}
 	}
 }

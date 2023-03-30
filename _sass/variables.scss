@@ -3,4 +3,39 @@ $tablet: "(min-width: 450px)";
 $mid-point: "(min-width: 620px)";
 $desktop: "(min-width: 900px)";
 
-$light-grey: #999;
+
+// dark mode
+
+:root{
+    --primary-highlight: black;
+    --secondary-highlight: #999;
+    --common: white;
+
+    // for theme independent styling
+    --light-primary-highlight: black;
+    --light-secondary-highlight: #999;
+    --light-common: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --primary-highlight: white;
+        --secondary-highlight: #868686;
+        --common: rgb(16, 20, 34);
+    }
+}
+
+#color-mode:checked ~ * {
+    --primary-highlight: white;
+    --secondary-highlight: #868686;
+    --common: rgb(16, 20, 34);
+}
+
+@media (prefers-color-scheme: dark) {
+    #color-mode:checked ~ * {
+        --primary-highlight: black;
+        --secondary-highlight: #999;
+        --common: white;
+    }
+}
+

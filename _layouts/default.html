@@ -24,24 +24,32 @@
 		{% endif %}
 	</head>
 	<body>
-		{% include navigation.html %}
-		<header>
-			{% if site.data.company_details.logo_image %}
-				<a href="{{site.baseurl }}/">
-					<img src="{{ site.baseurl }}{{ site.data.company_details.logo_image }}" width="180" alt="logo">
-				</a>
-			{% endif %}
-		</header>
-			
-		<div class="container main-content">
-			<section class="content">{{ content }}</section>
-			{% include sidebar.html %}
-		</div>
-		<footer>
-			<div class="container">
-				<hr>
-				&copy; {{ site.title }} {{ site.time | date: "%Y" }}. All rights reserved.
+		<input id="color-mode" type="checkbox" name="color-mode">
+		<label for="color-mode">
+			<span class="dark-mode-hide">{{ site.data.i18n.color-mode.dark-mode-label }}</span>
+			<span class="light-mode-hide">{{ site.data.i18n.color-mode.light-mode-label }}</span>
+		</label>
+		<div class="color-scheme-wrapper">
+			{% include navigation.html %}
+			<header>
+				{% if site.data.company_details.logo_image %}
+					<a href="{{site.baseurl }}/">
+						<img src="{{ site.baseurl }}{{ site.data.company_details.logo_image }}" width="180" alt="logo">
+					</a>
+				{% endif %}
+				
+			</header>
+				
+			<div class="container main-content">
+				<section class="content">{{ content }}</section>
+				{% include sidebar.html %}
 			</div>
-		</footer>
+			<footer>
+				<div class="container">
+					<hr>
+					&copy; {{ site.title }} {{ site.time | date: "%Y" }}. All rights reserved.
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>

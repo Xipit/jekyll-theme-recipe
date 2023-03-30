@@ -30,14 +30,14 @@
 			text-decoration: none;
 
 			&:hover svg {
-				fill: #000;
+				fill: var(--primary-highlight);
 			}
 		}
 
 		svg {
 			width: 25px;
 			height: 25px;
-			fill: $light-grey;
+			fill: var(--secondary-highlight);
 		}
 	}
 }

@@ -1,8 +1,8 @@
 .button, input[type="submit"] {
-	background: #fff;
+	background: var(--common);
 	cursor: pointer;
 	border: 1px solid #666;
-	color: #000;
+	color: var(--primary-highlight);
 	text-decoration: none;
 	padding: 5px 10px;
 	display: inline-flex;
@@ -11,8 +11,8 @@
 	font-size: .8em;
 
 	&:hover {
-		background: #000;
-		color: #fff;
+		background: var(--primary-highlight);
+		color: var(--common);
 	}
 
 	&:focus {
@@ -21,13 +21,13 @@
 }
 
 .button {
-	border-color: #000;
+	border-color: var(--primary-highlight);
 
 	a {
-		color: #000;
+		color: var(--primary-highlight);
 
 		&:hover {
-			color: #fff;
+			color: var(--common);
 		}
 	}
 }
@@ -44,11 +44,11 @@ input[type="text"], input[type="email"], textarea {
 	font-size: 1.1em;
 	padding: 10px;
 	box-sizing: border-box;
-	border: 1px solid #666;
+	border: 1px solid var(--secondary-highlight);
 	resize: none;
 
 	&:focus {
-		outline: 2px solid #333;
+		outline: 2px solid var(--secondary-highlight);
 	}
 }
 
@@ -63,18 +63,18 @@ label {
 }
 
 ::-webkit-input-placeholder { /* Chrome */
-  color: $light-grey;
+  color: var(--secondary-highlight);
 }
 
 :-ms-input-placeholder { /* IE 10+ */
-  color: $light-grey;
+  color: var(--secondary-highlight);
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: $light-grey;
+  color: var(--secondary-highlight);
   opacity: 1;
 }
 :-moz-placeholder { /* Firefox 4 - 18 */
-  color: $light-grey;
+  color: var(--secondary-highlight);
   opacity: 1;
 }
 
@@ -100,11 +100,11 @@ select {
 	width: 100%;
 	padding: 20px;
 	height: 43px;
-	background: #fff;
+	background: var(--common);
 	border-color: rgba(0,0,0,0);
 	font-size: 1em;
-	outline: 1px solid #000;
+	outline: 1px solid var(--primary-highlight);
 	&:focus {
-		outline: 2px solid #333;
+		outline: 2px solid var(--secondary-highlight);
 	}
 }

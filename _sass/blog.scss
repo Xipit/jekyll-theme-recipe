@@ -1,6 +1,6 @@
 .post {
 	h1 a {
-		color: #000;
+		color: var(--primary-highlight);
 		text-decoration: none;
 
 		&:hover {
@@ -19,6 +19,7 @@
 		svg {
 			position: relative;
 			top: 6px;
+			fill: var(--primary-highlight);
 		}
 
 		span {
@@ -38,8 +39,8 @@
 		input[type="number"] {
 			max-width: 50px;
 
-			background-color: black;
-			color: white;
+			background-color: var(--primary-highlight);
+			color: var(--common);
 			border: none;
 			padding: 4px;
 
@@ -47,9 +48,9 @@
 
 			&:hover, &:active, &:focus {
 				background-color: initial;
-				color: initial;
+				color: var(--primary-highlight);
 
-				border: 1px solid black;
+				border: 1px solid var(--primary-highlight);
 			}
 		}
 
@@ -111,7 +112,7 @@
 					content: counter(step-counter);
 					margin-right: 0px;
 					background-color: #{$recipe_color};
-					color: white;
+					color: var(--common);
 					/* padding: 1px 7px; */
 					font-size: .7em;
 					position: absolute;

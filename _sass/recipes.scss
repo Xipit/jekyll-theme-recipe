@@ -14,10 +14,10 @@
 			height: 100%;
 			display: block;
 			background: rgba(0, 0, 0, .2);
-			color: #fff;
+			color: var(--light-common);
 			text-decoration: none;
 			text-align: center;
-			vertical-align: text-bottom;
+			//vertical-align: text-bottom;
 			position: relative;
 			transition:      all 0.2s ease;
 			font-size: 1.1em;
@@ -28,7 +28,7 @@
 				bottom: 5px;
 				width: 100%;
 				left: 0;
-				text-shadow: 1px 1px 1px #000;
+				text-shadow: 1px 1px 1px var(--light-primary-highlight);
 			}
 
 			&:hover {

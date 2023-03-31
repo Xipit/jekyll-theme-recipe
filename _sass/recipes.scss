@@ -14,7 +14,7 @@
 			height: 100%;
 			display: block;
 			background: rgba(0, 0, 0, .2);
-			color: var(--light-common);
+			color: $light-common;
 			text-decoration: none;
 			text-align: center;
 			//vertical-align: text-bottom;
@@ -28,7 +28,7 @@
 				bottom: 5px;
 				width: 100%;
 				left: 0;
-				text-shadow: 1px 1px 1px var(--light-primary-highlight);
+				text-shadow: 1px 1px 1px $light-primary-highlight;
 			}
 
 			&:hover {

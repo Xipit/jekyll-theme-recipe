@@ -3,39 +3,40 @@ $tablet: "(min-width: 450px)";
 $mid-point: "(min-width: 620px)";
 $desktop: "(min-width: 900px)";
 
-
 // dark mode
+$light-primary-highlight: black;
+$light-secondary-highlight: #999;
+$light-common: white;
+
+$dark-primary-highlight: white;
+$dark-secondary-highlight: #868686;
+$dark-common: rgb(16, 20, 34);
 
 :root{
-    --primary-highlight: black;
-    --secondary-highlight: #999;
-    --common: white;
-
-    // for theme independent styling
-    --light-primary-highlight: black;
-    --light-secondary-highlight: #999;
-    --light-common: white;
+    --primary-highlight: $light-primary-highlight;
+    --secondary-highlight: $light-secondary-highlight;
+    --common: $light-common;
 }
 
 @media (prefers-color-scheme: dark) {
     :root{
-        --primary-highlight: white;
-        --secondary-highlight: #868686;
-        --common: rgb(16, 20, 34);
+        --primary-highlight: $dark-primary-highlight;
+        --secondary-highlight: $dark-secondary-highlight;
+        --common: $dark-common;
     }
 }
 
 #color-mode:checked ~ * {
-    --primary-highlight: white;
-    --secondary-highlight: #868686;
-    --common: rgb(16, 20, 34);
+    --primary-highlight: $dark-primary-highlight;
+    --secondary-highlight: $dark-secondary-highlight;
+    --common: $dark-common;
 }
 
 @media (prefers-color-scheme: dark) {
     #color-mode:checked ~ * {
-        --primary-highlight: black;
-        --secondary-highlight: #999;
-        --common: white;
+        --primary-highlight: $light-primary-highlight;
+        --secondary-highlight: $light-secondary-highlight;
+        --common: $light-common;
     }
 }
 

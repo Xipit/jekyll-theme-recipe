@@ -7,8 +7,18 @@ html , body {
 
 .color-scheme-wrapper {
 	min-height:100vh;
-	background: var(--common);
 	color: var(--primary-highlight);
+}
+
+// background color on seperate fixed element to emulate body background 
+// for browser based "overscroll" animation e.g. on safari and chrome
+.emulated-background {
+	position:fixed;
+	height: 100vh;
+    width: 100vw;
+    z-index: -10;
+
+	background-color: var(--common);
 }
 
 body, input, textarea {

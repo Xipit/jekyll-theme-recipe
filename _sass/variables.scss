@@ -13,30 +13,30 @@ $dark-secondary-highlight: #868686;
 $dark-common: rgb(16, 20, 34);
 
 :root{
-    --primary-highlight: $light-primary-highlight;
-    --secondary-highlight: $light-secondary-highlight;
-    --common: $light-common;
+    --primary-highlight: #{$light-primary-highlight};
+    --secondary-highlight: #{$light-secondary-highlight};
+    --common: #{$light-common};
 }
 
 @media (prefers-color-scheme: dark) {
     :root{
-        --primary-highlight: $dark-primary-highlight;
-        --secondary-highlight: $dark-secondary-highlight;
-        --common: $dark-common;
+        --primary-highlight: #{$dark-primary-highlight};
+        --secondary-highlight: #{$dark-secondary-highlight};
+        --common: #{$dark-common};
     }
 }
 
 #color-mode:checked ~ * {
-    --primary-highlight: $dark-primary-highlight;
-    --secondary-highlight: $dark-secondary-highlight;
-    --common: $dark-common;
+    --primary-highlight: #{$dark-primary-highlight};
+    --secondary-highlight: #{$dark-secondary-highlight};
+    --common: #{$dark-common};
 }
 
 @media (prefers-color-scheme: dark) {
     #color-mode:checked ~ * {
-        --primary-highlight: $light-primary-highlight;
-        --secondary-highlight: $light-secondary-highlight;
-        --common: $light-common;
+        --primary-highlight: #{$light-primary-highlight};
+        --secondary-highlight: #{$light-secondary-highlight};
+        --common: #{$light-common};
     }
 }
 

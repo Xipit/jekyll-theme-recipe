@@ -10,13 +10,9 @@
 	margin: 0;
 	font-size: .8em;
 
-	&:hover {
+	&:hover, &:active, &:focus {
 		background: var(--primary-highlight);
 		color: var(--common);
-	}
-
-	&:focus {
-		outline: none;
 	}
 }
 
@@ -45,9 +41,14 @@ input[type="text"], input[type="email"], textarea {
 	padding: 10px;
 	box-sizing: border-box;
 	border: 1px solid var(--secondary-highlight);
+	background-color: var(--primary-highlight);
+	color: var(--common);
 	resize: none;
 
-	&:focus {
+	&:hover, &:active, &:focus {
+		background-color: initial;
+		color: var(--primary-highlight);
+
 		outline: 2px solid var(--secondary-highlight);
 	}
 }

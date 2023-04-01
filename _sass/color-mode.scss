@@ -40,7 +40,7 @@ input#color-mode + label{
 
         &:after{
             border-left: solid 1px var(--common);
-
+            color: var(--common);
         }
     }
 
@@ -61,6 +61,6 @@ input#color-mode:checked + label:after{
 
 @media (min-width: 1160px) {
     input#color-mode, input#color-mode + label {
-        left: calc(calc(calc(100vw - 1160px) / 2) + 30px);
+        left: calc(calc(calc(100% - 1160px) / 2) + 30px);
     }
 }

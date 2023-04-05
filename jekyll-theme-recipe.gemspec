@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
     s.name          = "jekyll-theme-recipe"
-    s.version       = "0.7.1"
+    s.version       = "0.8.5"
     s.license       = "CC0-1.0"
     s.authors       = ["Hanno Witzleb"]
     s.email         = []

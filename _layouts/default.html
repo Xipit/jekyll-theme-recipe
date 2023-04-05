@@ -22,10 +22,9 @@
 		{% endif %}
 	</head>
 	<body>
-		<input id="color-mode" type="checkbox" name="color-mode">
-		<label for="color-mode">
-			<span class="dark-mode-hide">{{ site.data.i18n.color-mode.dark-mode-label }}</span>
-			<span class="light-mode-hide">{{ site.data.i18n.color-mode.light-mode-label }}</span>
+		<input id="color-mode" type="checkbox" name="color-mode" class="switch">
+		<label for="color-mode" class="color-slider-wrapper">
+			<span class="color-slider"></span>
 		</label>
 		<div class="color-scheme-wrapper">
 			<div class="emulated-background"></div>

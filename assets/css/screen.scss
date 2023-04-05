@@ -1,17 +1,18 @@
 ---
-title: CSS-Stylesheet for screens
+# CSS-Stylesheet for screens
 ---
 
 // doesnt work :(, page.color seems to be nil, but actually exists
 $recipe_color: "{% if page.color and page.color != '' %}{{ page.color }}{% else %}{{'#ff4e4e'}}{% endif %}";
 
-@import "fonts";
-@import "variables";
-@import "color-mode";
-@import "elements";
-@import "layout";
-@import "blog";
-@import "forms";
-@import "navigation";
-@import "sidebar";
-@import "recipes";
+@import 
+"fonts",
+"variables",
+"color-mode",
+"elements",
+"layout",
+"blog",
+"forms",
+"navigation",
+"sidebar",
+"recipes";

@@ -82,7 +82,7 @@
 
 			// alternative measurements
 			em {
-				color: rgba(0, 0, 0, 0.45);
+				color: var(--secondary-highlight);
 				white-space: pre; // newline
 				font-style: normal;
 			}

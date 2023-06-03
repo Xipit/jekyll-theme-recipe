@@ -1,13 +1,15 @@
 .recipes {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 10px;
+	container-type: inline-size;
+
 	.recipe {
 		flex: 1 0 300px;
-		height: 200px;
+		height: calc(100px + 10cqw);
 		display: inline-block;
 		background-position: center;
 		background-size: cover;
-		margin: 5px 7px;
 
 		a {
 			width: 100%;
@@ -20,19 +22,23 @@
 			//vertical-align: text-bottom;
 			position: relative;
 			transition:      all 0.2s ease;
-			font-size: 1.1em;
+			font-size: 1.2em;
 			font-weight: 700;
+			box-sizing: border-box;
+			border: 2px solid transparent; // ensures no content shift on hover
+
 
 			span {
-				position: absolute;
-				bottom: 5px;
-				width: 100%;
-				left: 0;
-				text-shadow: 1px 1px 1px #{$light-primary-highlight};
+				display: inline-block;
+				backdrop-filter: blur(4px);
+				text-shadow: 0px 0px 10px #{$light-primary-highlight};
+				padding: 0 5px;
+				margin-top: 5px;
 			}
 
 			&:hover {
 				background: none;
+				border: 2px solid var(--primary-highlight)
 			}
 		}
 	}
